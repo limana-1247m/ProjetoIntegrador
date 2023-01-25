@@ -1,0 +1,30 @@
+footer {
+  background-color: var(--branco-base);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: var(--header);
+  color: var(--preto-base);
+}
+footer a:hover {
+  text-decoration: none;
+  color: var(--azul-base);
+}
+footer a {
+  text-decoration: none;
+  color: var(--preto-base);
+}
+
+
+.l{
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--branco-de-fundo);
+}

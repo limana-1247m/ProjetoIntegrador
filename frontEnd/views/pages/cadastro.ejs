@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <div class="voltar">
+        <a class="link" href="/conectar">
+
+            <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>ic_back</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <g id="24-px-Icons" transform="translate(-219.000000, -26.000000)" stroke="#000000">
+                        <g id="ic_back" transform="translate(216.000000, 24.000000)">
+                            <g transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "
+                                id="forward">
+                                <g transform="translate(4.000000, 3.000000)" stroke-width="2">
+                                    <path d="M0,9 L16,9" id="Line"></path>
+                                    <path d="M16,9 L7.93774223,0.937742233" id="Line"></path>
+                                    <path d="M16,9 L7.93774223,17.0622578" id="Line"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+
+    </div>
+
+    <main class="main">
+
+        <div class="texto-cadrasto">
+            <h1>Pronto para<span> mudar </span><br>sua vida?</br></h1>
+
+        </div>
+
+
+
+        <div class="cadastro">
+            <h2>CADASTRE-SE</h2>
+            <form class="form" action="/cadastro" method="POST">
+                <div class="cadastro_div">
+                    <label for="apelido">Seu apelido</label>
+                    <input class="input_cadastro" type="text" name="apelido" id="apelido"
+                        placeholder="Digite seu apelido...">
+                </div>
+                <div class="cadastro_div">
+                    <label for="nome">Seu Nome</label>
+                    <input class="input_cadastro" type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+                </div>
+                <div class="cadastro_div">
+                    <label for="sobrenome">Seu Sobrenome</label>
+                    <input class="input_cadastro" type="text" name="sobrenome" id="sobrenome"
+                        placeholder="Digite seu sobrenome...">
+                </div>
+
+                <div class="cadastro_div">
+                <label for="escolaridade">Grau de escolaridade</label>
+                <select class="escolaridade" name="escolaridade" id="escolaridade">
+                    <option value="default">Selecione a opção em que você se encaixa</option>
+                    <option value="1">Não conclui o ensino fundamental</option>
+                    <option value="2">Conclui o ensino fundamental, não conclui o ensino médio</option>
+                    <option value="3">Conclui o ensino médio, não tenho ensino superior</option>
+                    <option value="4">Tenho ensino superior</option>
+                </select>
+                </div>
+                
+                <div class="cadastro_div">
+                    <label for="email">Seu email</label>
+                    <input class="input_cadastro" type="email" name="email" id="email"
+                        placeholder="Digite seu email...">
+                </div>
+                <div class="cadastro_div">
+                    <label for="senha">Sua senha</label>
+                    <input class="input_cadastro" type="password" name="senha" id="senha"
+                        placeholder="Digite sua senha...">
+                </div>
+
+                <div class="enviar-cadastro">
+                    <button class="button" type="submit">Cadastrar</button>
+                    <div class="link-login">
+                        Já tem uma conta?<br>
+                        <a href="/login">Acesse</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
